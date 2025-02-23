@@ -1,0 +1,23 @@
+# How to get length of integer
+num = 123456
+length = str(num)
+print(len(length))
+
+
+# How to get index
+print("Hello"[4])
+
+
+# How to check type of data
+print(type(123))
+print(type(1.23))
+print(type("abc"))
+print(type(True))
+
+
+# Converting integer to string practice
+name = input("What is your name?")
+print(type(name))
+length_of_name = len(name)
+print(type(length_of_name))
+print("Number of letters in your name: " + str(length_of_name))
