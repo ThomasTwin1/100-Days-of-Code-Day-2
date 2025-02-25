@@ -1,0 +1,39 @@
+import math
+bmi = 84 / 1.65 ** 2
+# How to concatenate strings and integers
+# F String method
+age = 25
+message = f"I am {age}"
+print(message)  # Output: "I am 25"
+
+# String function
+age = 25
+message = "I am " + str(age)
+print(message)  # Output: "I am 25"
+
+# .format method
+age = 25
+message = "I am {}".format(age)
+print(message)  # Output: "I am 25"
+# Concatenate strings and integers practice
+score = 0
+score += 1
+print("Your score is {}" .format(score))
+print(f"Your score is {score}")
+print("Your score is " + str(score))
+
+
+# How to round numbers
+print(round(bmi, 2))
+print(int(bmi)) # Can only take 1 argument
+print(math.ceil(bmi)) # Can only take 1 argument
+print(math.floor(bmi)) # Can only take 1 argument
+
+score = 0
+score += 1
+print("Your score is {}" .format(score))
+print(f"Your score is {score}")
+print("Your score is " + str(score))
+
+boolean = True
+print(f"Here is your score, bmi and boolean: {score}, {bmi}, {boolean}")
