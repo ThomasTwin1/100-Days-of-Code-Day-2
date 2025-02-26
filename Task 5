@@ -8,3 +8,18 @@ tip_amount = tip
 total = round((tip/100) * bill  + bill, 2)
 bill_split = round(total/people, 2)
 print (f"Your total is {total}. Each person must pay {bill_split}")
+
+# Cleaner version
+# Get user inputs
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill? "))
+
+# Calculate the tip and total bill
+total = round((tip / 100) * bill + bill, 2)
+
+# Calculate the amount each person should pay
+bill_split = round(total / people, 2)
+
+# Display the results with two decimal places
+print(f"Your total is ${total:.2f}. Each person must pay ${bill_split:.2f}.")
